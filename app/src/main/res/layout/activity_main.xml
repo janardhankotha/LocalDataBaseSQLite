@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="5">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textviewarabica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Arabica"
+                android:textSize="20sp"
+                android:gravity="center"
+
+                android:background="#ffffff" />
+            <TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="3dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/column1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textSize="11sp"
+                    android:layout_marginRight="1dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/column2"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="International Price"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:layout_marginRight="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/column3"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Domestic price"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:background="#FFFFFF"/>
+            </TableRow>
+
+            <ListView
+                android:id="@+id/arabicalistview"
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+            <TextView
+                android:id="@+id/textviewRobusta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:text="Robusta"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="#ffffff" />
+            <TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:paddingTop="3dp"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/column4"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Month"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:background="#FFFFFF"
+                    android:textSize="11sp"
+                    android:layout_marginRight="1dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <TextView
+                    android:id="@+id/column5"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="International Price"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    android:layout_marginRight="1dp"
+                    android:background="#FFFFFF"/>
+                <TextView
+                    android:id="@+id/column6"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Domestic price"
+                    android:textColor="#000000"
+                    android:textSize="11sp"
+                    android:gravity="center"
+                    android:background="#FFFFFF"/>
+            </TableRow>
+
+            <ListView
+                android:id="@+id/robustalistview"
+                android:paddingTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/textviewdollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:text= "1 Dollar Price=68.80"/>
+    </RelativeLayout>
+
+</LinearLayout>

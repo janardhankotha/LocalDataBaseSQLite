@@ -1,0 +1,41 @@
+<TableRow  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/column1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Month"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:textSize="12sp"
+        android:layout_marginRight="1dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/column2"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="International Price"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_marginRight="1dp"
+        android:background="#FFFFFF"/>
+    <TextView
+        android:id="@+id/column3"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Domestic price"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:background="#FFFFFF"/>
+</TableRow>
